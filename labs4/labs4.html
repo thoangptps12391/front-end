@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<title>Labs4</title>
+</head>
+<body ng-app="myapp">
+	<div ng-controller="myctrl">
+		<h2>bài 1</h2>
+		<img width="250px" src="thoang.jpg" alt="avatar">
+		<ul>
+			<li>Họ và tên:{{fullname}}</li>
+			<li>Ngày sinh:{{birthday}}</li>
+			<li>Giới tính:{{gander}}</li>
+			<li>Điểm trung bình:{{mark}}</li>
+		</ul>
+	</div>
+	<hr>
+	<h2>Bài 2</h2>
+	<img width="250px" src="thoang.jpg" alt="">
+	<ul>
+		<li>Họ và tên:{{student.fullname}}</li>
+		<li>Ngày sinh:{{student.birthday}}</li>
+		<li>Giới tính:{{student.gander}}</li>
+		<li>Điểm trung bình:{{student.mark}}</li>
+	</ul>
+	<hr>
+	<h2>Bài 3</h2>
+	<table class="table table-bodered table-dark">
+		<thead>
+			<tr>
+				<th scope="col">Hình</th>
+				<th scope="col">Họ và tên</th>
+				<th scope="col">Ngày sinh</th>
+				<th scope="col">Giới tính</th>
+				<th scope="col">Điểm</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><img width="250px" src="thoang.jpg" alt=""></td>
+				<td>{{studen1[0].fullname}}</td>
+				<td>{{studen1[0].birthday}}</td>
+				<td>{{studen1[0].gender}}</td>
+				<td>{{studen1[0].mark}}</td>
+			</tr>
+			<tr>
+				<td><img width="250px" src="thoang.jpg" alt=""></td>
+				<td>{{studen1[1].fullname}}</td>
+				<td>{{studen1[1].birthday}}</td>
+				<td>{{studen1[1].gender}}</td>
+				<td>{{studen1[1].mark}}</td>
+			</tr>
+			<tr>
+				<td><img width="250px" src="thoang.jpg" alt=""></td>
+				<td>{{studen1[2].fullname}}</td>
+				<td>{{studen1[2].birthday}}</td>
+				<td>{{studen1[2].gender}}</td>
+				<td>{{studen1[2].mark}}</td>
+			</tr>
+			
+			
+		</tbody>
+	</table>
+	<hr>
+	<h2>Bài 4</h2>
+	<div class="container mb-5">
+		<div class="row">
+			<form action="" (ngSubmit)="onSubmit(Form1)" #Form1="ngForm">
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Chiều dài</label>
+					<input type="text" class="form-control" [(ngModel])="dodai.chieudai" name="chieudai" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail2" class="form-label">Chiều rộng</label>
+					<input type="text" class="form-control" [(ngModel])="dodai.chieurong" name="chieurong" id="exampleInputEmail2" aria-describedby="emailHelp">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail3" class="form-label">Diện tích</label>
+					<input type="text" class="form-control" [(ngModel])="dodai.dientich" name="dientich" id="exampleInputEmail3" aria-describedby="emailHelp">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail4" class="form-label">Chu vi</label>
+					<input type="text" class="form-control" [(ngModel])="dodai.chuvi" name="chuvi" id="exampleInputEmail4" aria-describedby="emailHelp">
+				</div>
+				<button type="submit" class="btn btn-primary" name="calculate" value="calculate">Tính</button>
+			</form>
+		</div>
+	</div>
+	<hr>
+	<h2>Bài 5</h2>
+	<div class="container mb-5">
+		<div class="row">
+			<form action="" (ngSubmit)="xeploai(Form2)" #Form2="ngForm">
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Họ và Tên</label>
+					<input type="text" class="form-control" [(ngModel])="hosinh.hoten" name="hoten" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail2" class="form-label">Ngày sinh</label>
+					<input type="text" class="form-control" [(ngModel])="hosinh.ngaysinh" name="ngaysinh" id="exampleInputEmail2" aria-describedby="emailHelp">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail3" class="form-label">Điểm</label>
+					<input type="text" class="form-control" [(ngModel])="hosinh.diem" name="diem" id="exampleInputEmail3" aria-describedby="emailHelp">
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail4" class="form-label">Học lực</label>
+					<input type="text" class="form-control" [(ngModel])="hosinh.hocluoc" name="hocluc" id="exampleInputEmail4" aria-describedby="emailHelp">
+				</div>
+				<button type="submit" class="btn btn-primary" name="xeploai" value="xeploai">Xếp loại</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

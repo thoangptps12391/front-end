@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thiết kế Form với Boostrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title"></div>
+			</div>
+			<div class="panel-body">
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active" role="presentation">
+						<a class="nav-link active" href="#edit" aria-controls="home" role="tab" data-toggle="tab">Cập Nhật</a>
+					</li>
+					<li role="presentation">
+						<a class="nav-link" href="#list" aria-controls="profile" role="tab" data-toggle="tab">Danh Sách</a>
+					</li>
+				</ul>
+				<form action="" id="edit">
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label>Mã nhân viên</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group col-sm-6">
+							<label>Họ Và Tên</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label>Câu lạc bộ</label>
+							<select class="form-control">
+								<option>asdsad</option>
+								<option>asdsad</option>
+							</select>
+						</div>
+						<div class="form-group col-sm-6">
+							<label>Lương</label>
+							<div class="input-group mb-3">
+								<div class="input-group-addon">
+									<span class="input-group-text">$</span>
+								</div>
+								<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+								<div class="input-group-append">
+									<span class="input-group-text">.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label>Thưởng</label>
+							<div class="input-group mb-3">
+								<div class="input-group-addon">
+									<span class="input-group-text">$</span>
+								</div>
+								<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+								<div class="input-group-append">
+									<span class="input-group-text">.00</span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group col-sm-6">
+							<label>Phụ Cấp</label>
+							<div class="input-group">
+								<div class="input-group-addon">
+									<span class="input-group-text">$</span>
+								</div>
+								<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+								<div class="input-group-append">
+									<span class="input-group-text">.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-sm-12">
+							<label for="">Ghi chú</label>
+							<textarea class="form-control" row="3"></textarea>
+						</div>
+					</div>
+				</form>
+				<table class="table table-hover table-bordered" id="list">
+					<thead>
+						<tr>
+							<td colspan="5"><h2><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+	                                <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+	                            </svg>BẢNG LƯƠNG THÁNG 12</h2></td>
+						</tr>
+						<tr>
+							<th rowspan="2">MÃ NV</th>
+							<th rowspan="2">HỌ VÀ TÊN</th>
+							<th colspan="3">THU NHẬP</th>
+						</tr>
+						<tr>
+							<th>LƯƠNG</th>
+							<th>THƯỞNG</th>
+							<th>PHỤ CẤP</th>
+						</tr>
+						<tr>
+							<td>NV100</td>
+							<td>NGUYỄN CÔNG PHƯỢNG</td>
+							<td>5000000</td>
+							<td>500000</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>NV102</td>
+							<td>PHAN VĂN TÀI EM</td>
+							<td>9000000</td>
+							<td>600000</td>
+							<td>100000</td>
+						</tr>
+						<tr>
+							<td>NV103</td>
+							<td>LÊ HUỲNH ĐỨC</td>
+							<td>7000000</td>
+							<td>300000</td>
+							<td>200000</td>
+						</tr>
+						<tr>
+							<td>Lương của cầu thủ và huấn luyện viên chuyên nghiệp</td>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="panel-footer"></div>
+		</div>
+	</div>
+</body>
+</html>

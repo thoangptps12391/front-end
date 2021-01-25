@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Bài 3</title>
+    <style type="text/css">
+    	header{
+			position: relative;
+		}
+		.shopping-mall{
+			position: absolute;
+			bottom: 20px;
+			font-variant: small-caps;
+		}
+		.shopping-mall>h1{
+			font-family:Impact;
+			font-style: 50px;
+			color: white;
+			letter-spacing: 0.3px;
+			text-shadow: 0 0 2px black;
+			padding-bottom: 0;
+			border-bottom: 1px dotted gray;
+			margin: 0;
+		}
+		.shopping-mall>h5{
+			margin-top: 5px;
+			letter-spacing: 0.5px;
+		}
+        nav>a>img{
+            width: 50px;
+            height: 50px;
+        }
+        .poly-cart{
+            margin-top: 5px;
+            border: 2px solid black;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .poly-cart ul{
+            padding: 0;
+            margin: auto;
+            list-style: none;
+            font-variant: small-caps;
+        }
+        .poly-cart .panel-heading strong{
+            font-variant: small-caps;
+            font-size: larger;
+            text-shadow: 0 0 2px darkgray;
+        }
+        .cata{
+            line-height: 10vh;
+            margin: 15px;
+        }
+        .poly-prod{
+            text-align: center;
+            padding:5px;
+        }
+
+        .poly-prod .panel-body img{
+            height: 150px;
+            max-width: 95%;
+        }
+        .vien{
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    	<header class="row">
+    		<!-- header -->
+    		<div class="shopping-mall">
+    			<h1>online shopping mail</h1>
+    			<h5>the jdgffhkgjsdfgjsdhfklsdhf</h5>
+    		</div>
+    		<img style="width: 100%;height: 50vh;" src="https://sangogiadinh.com/wp-content/uploads/2019/08/Cấu-tạo-sàn-gỗ-Egger-Đức.jpg" alt="hinh" class="pull-right">
+
+    	</header>
+    	<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <a class="navbar-brand" href="#"><img src="http://dphomedecor.com/wp-content/uploads/2020/09/z2065035281052_987da0ddc700c4a0115c4a7cb5d33ad6.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                            </svg>
+                            Home 
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                                <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                                <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                            </svg>
+                        Tin Tức
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+                                <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
+                            </svg>
+                        Sản Phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">ThaiXinh</a>
+                            <a class="dropdown-item" href="#">Kosmode</a>
+                            <a class="dropdown-item" href="#">Galamax</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Robina</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+                                <path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                            </svg>
+                        Giới Thiệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                            Liên Hệ
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    	<div class="row">
+    		<article class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-4 poly-prod">
+                       <div class="panel panel-default vien">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    tensp
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                                <img src="images/Kosmos/kb1882-tt.jpg" width="100%" alt="">
+                            </div>
+                            <div class="panel-footer">
+                                don gia
+                            </div>
+                        </div>                
+                    </div>
+                    <div class="col-sm-4 poly-prod">
+                        <div class="panel panel-default vien">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    tensp
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                                <img src="images/Kosmos/kb1882-tt.jpg" width="100%" alt="">
+                            </div>
+                            <div class="panel-footer">
+                                don gia
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 poly-prod">
+                       <div class="panel panel-default vien">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    tensp
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                                <img src="images/Kosmos/kb1882-tt.jpg" width="100%" alt="">
+                            </div>
+                            <div class="panel-footer">
+                                don gia
+                            </div>
+                        </div>                
+                    </div>
+                    <div class="col-sm-4 poly-prod">
+                        <div class="panel panel-default vien">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    tensp
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                                <img src="images/Kosmos/kb1882-tt.jpg" width="100%" alt="">
+                            </div>
+                            <div class="panel-footer">
+                                don gia
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 poly-prod">
+                        <div class="panel panel-default vien">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    tensp
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                                <img src="images/Kosmos/kb1882-tt.jpg" width="100%" alt="">
+                            </div>
+                            <div class="panel-footer">
+                                don gia
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-4 poly-prod">
+                        <div class="panel panel-default vien">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    tensp
+                                </h4>
+                            </div>
+                            <div class="panel-body">
+                                <img src="images/Kosmos/kb1882-tt.jpg" width="100%" alt="">
+                            </div>
+                            <div class="panel-footer">
+                                don gia
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+    		</article>
+    		<aside class="col-sm-3">
+                <div class="poly-cart">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <img src="images/shoppingcart.gif" alt="" class="col-sm-5">
+                            <ul class="col-sm-7">
+                                <li>100 items</li>
+                                <li>$ 56.8</li>
+                                <li><a href="">View Cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel poly-cart">
+                    <div class="panel-heading">
+                            <span class="glyphicon-th-list"></span>
+                            <strong>Loai</strong>
+                        </div>
+                        <hr>
+                        <div class="list-group cata">
+                            <a href="#">Galamax</a>
+                            <a href="#">Kosmos</a>
+                            <a href="#">ThaiXinh</a>
+                            <a href="#">Robina</a>
+                            <a href="#">povar</a>
+                            <a href="#">ATG</a>
+                        </div>
+                    </div>
+            </aside>
+    		<!-- ben phai -->
+    		<footer class="row">
+    			<div class="panel panel-default">
+    				<div class="panel-heading text-center">
+    					<p>FPT Polytechnic &coppy; 2017 All rights reserved.</p>
+    				</div>
+    			</div>
+    		</footer>
+    	</div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>welcome to AndularJS</title>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	<body ng-app="myapp">
+		<div ng-controller="myctrl">
+			<!-- hiển thị	 -->
+			<img src="{{photo}}" alt="">
+			<ul>
+				<li>ho ten: {{fullname}}</li>
+				<li>ngay sinh: {{birthday}</li>
+				<li>giới tính: {{gender}}</li>
+				<li>điểm: {{mark}}</li>
+			</ul>
+			<script>
+				var app=angular.module("myapp",[]);
+				app.controller('myctrl',function($scope){
+					// cung cấp thông tinh
+					$scope.fullname="Phan Thanh Thoang";
+					$scope.birthday="06-05-1997";
+					$scope.gender="Nam";
+					$scope.photo="thoang.jpg";
+					$scope.mark=8.5;
+				});
+			</script>
+		</div>
+	</body>
+	</html>									
